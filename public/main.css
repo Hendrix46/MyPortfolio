@@ -1,0 +1,565 @@
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block; }
+
+body {
+    margin: 0;
+    font-family: 'Poppins',Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff; }
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem; }
+a{
+    text-decoration: none!important;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem; }
+ol,
+ul,
+dl {
+    margin-top: 0;
+    margin-bottom: 1rem; }
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+    margin-bottom: 0;
+    list-style-type: none}
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent; }
+
+#button {
+    display: inline-block;
+    background-color: #3e64ff;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+    opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+.up{
+    margin-top: 8px;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+#button:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+#button:active {
+    background-color: #555;
+}
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.navbar-scroll{
+    transition: 0.5s all ease-in-out;
+    background-color: white;
+    box-shadow: 3px 3px 20px grey;
+}
+#\#menu{
+    list-style-type: none;
+}
+#\#menu a{
+    font-size: 18px!important;
+    font-weight: 400;
+    color: black;
+    font-family: "Segoe UI";
+}
+.intro{
+    height: 650px;
+    /*background-attachment: fixed;*/
+    background-image: url("Img/bg.png");
+    background-size: cover;
+}
+.navbar-brand img{
+    width: 180px;
+}
+.subheading{
+    margin-top: 200px;
+}
+.subheading h2{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 800;
+    color: #3e64ff;
+    letter-spacing: 4px;
+}
+.subheading h1{
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 800;
+}
+.arrow-icon {
+    margin-top: 200px;
+    position: relative;
+}
+.arrow1 {
+    animation: slide1 1s ease-in-out infinite;
+    margin-top: 10px;
+}
+
+@keyframes slide1 {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, 14px);
+    }
+}
+
+.myimage{
+    height: 650px!important;
+    overflow: hidden;
+    padding-left: 50px!important;
+    padding-right: 0!important;
+}
+.abt h1{
+    font-size: 50px!important;
+    font-weight: 700;
+}
+.abt p{
+    font-size: 16px!important;
+    color: grey;
+}
+.about-data{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.about-data li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+.about-data span{
+    width: calc(100% - 130px);
+}
+.about-data span:first-child{
+    font-weight: 600;
+    color: black;
+    width: 150px;
+}
+.download-resume{
+    padding: 12px 32px;
+    border-radius: 30px;
+    background-color: #3e64ff;
+    color: white;
+    border: 2px solid #3e64ff;
+    font-size: 20px;
+}
+.download-resume:hover{
+    background-color: white;
+    border: 2px solid black;
+    transition: 0.5s all ease-in-out;
+    color: black;
+}
+.currentPage{
+    color: #3e64ff !important;
+    font-size: 20px;
+}
+#navi{
+    top: 180px;
+    position: sticky;
+    margin: 0;
+}
+#navi ul{
+    margin: 0;
+    padding: 0;
+}
+#navi li {
+    font-weight: 700;
+    list-style: none;
+    margin-bottom: 10px;
+}
+#navi a{
+    color: black;
+}
+
+#navi a:after{
+    position: absolute;
+    top: 50%;
+    left: -24px;
+    width: 20px;
+    height: 2px;
+    content: '';
+    transform: translateY(-50%);
+    background: #3e64ff;
+}
+.ftco-animate {
+    opacity: 1;
+    /*visibility: hidden;*/
+}
+.page{
+    width: 100%;
+    margin-bottom: 7em;
+}
+
+
+.page heading{
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #3e64ff;
+}
+.resume-wrap{
+    width: 100%;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    padding-bottom: 10px;
+}
+.resume-wrap .icon{
+    width: 50px;
+    height: 50px;
+    color: white;
+    background: #3e64ff;
+    border-radius: 50%;
+}
+.icon span{
+    color: white;
+    font-size: 28px;
+}
+.resume-wrap .text{
+    width: calc(100% - 50px);
+}
+.resume-wrap .date{
+    font-weight: 700;
+    font-size: 16px;
+    color: rgba(0,0,0,.6);
+    color: #3e64ff;
+}
+.resume-wrap h2{
+    font-size: 24px;
+    font-weight: 600;
+}
+.resume-wrap .position{
+    font-size: 18px;
+    font-weight: 400;
+// letter-spacing: 3px;
+// text-transform: uppercase;
+    color: black;
+}
+
+.progress-wrap{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.progress-wrap h3{
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 500;
+
+}
+.progress{
+    color: #3e64ff;
+    height: 10px;
+    box-shadow: none;
+    background: rgba(0,0,0 , 0.2);
+    overflow: visible;
+}
+.progress-bar{
+    background: #3e64ff;
+    box-shadow: none;
+    font-size: 12px;
+    line-height: 1.2;
+    color: black;
+    font-weight: 600;
+    position: relative;
+    overflow: visible;
+    border-radius: 2px;
+}
+
+.progress-bar:after{
+    position: absolute;
+    top: -2px;
+    right: 0;
+    width: 34px;
+    height: 34px;
+    content: '';
+    background: #3e64ff;
+    border-radius: 2px;
+    opacity: 0;
+}
+.progress-bar span{
+    position: absolute;
+    top: -38px;
+    right: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+.progress-circle .progress {
+    width: 150px;
+    height: 150px;
+    background: none;
+    position: relative;
+}
+.progress-circle .progress::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 6px solid #eee;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.progress-circle .progress>span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.progress .progress-left {
+    left: 0;
+}
+.progress .progress-left .progress-bar {
+    /*left: 100%;*/
+    color: red!important;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 10px !important;
+    -webkit-transform-origin: left;
+    transform-origin: center;
+}
+.progress .progress-right {
+    right: 0;
+}
+.progress .progress-right .progress-bar {
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: right;
+    transform-origin:right;
+}
+.progress .progress-value {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.services-1 .icon{
+    display: block;
+    margin-bottom: 30px;
+    font-size: 60px;
+    /*line-height: 1.0;*/
+    color: #3e64ff;
+
+}
+
+.desc h3{
+    line-height: 1.3;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    position: relative;
+    color: black;
+}
+.desc h3:after{
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    content: '';
+    width: 30px;
+    height: 1px;
+    background: #3e64ff;
+    margin: 0 auto;
+}
+.desc a{
+    color: white;
+}
+.desc h4{
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 18px;
+}
+.desc span{
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: #3e64ff;
+}
+.desc p{
+    color: rgba(0,0,0,.7);
+}
+.services-1:hover{
+    background: #3e64ff;
+    transition:0.3s all ease-in-out;
+}
+.services-1:hover .icon {
+    color: white;
+}
+.services-1:hover h3{
+    color: black;
+}
+.services-1:hover h3:after{
+    background: black;
+}
+.services-1{
+    margin-bottom: 40px;
+    padding: 2em;
+    background: rgba(255,255,255,.1);
+    width: 100%;
+
+}
+.box{
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+}
+.contact .icon{
+    width: 100px;
+    height: 100px;
+    background: #3e64ff;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius(50%);
+}
+.cicon{
+    color: #3e64ff;
+    font-size: 40px;
+}
+.contact h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+.contact-form{
+    width: 100%;
+}
+.block-9 .form-control {
+    outline: none!important;
+    box-shadow: none!important;
+    font-size: 15px;
+}
+.img{
+    height: 500px!important;
+    overflow: hidden;
+}
+.footer{
+    font-size: 16px;
+    background: black;
+    padding: 1em 0;
+    z-index: 0;
+}
+
+.footer a{
+    color: rgba(255,255,255, .7);
+}
+.footer a:hover{
+    color: rgba(255,255,255, .9);
+}
+.footnav {
+    margin: 0 450px;
+}
+.social{
+    margin: 0 530px;
+}
+.social a{
+
+    font-size: 30px;
+    color: #3e64ff!important;
+}
+
+@media screen and (max-width: 480px){
+    #button{
+        right: 20px!important;
+    }
+    h1{
+        font-size: 36px!important;
+    }
+    .abt h1{
+        font-size: 36px!important;
+    }
+    .download-resume{
+        padding: 12px 32px;
+        border-radius: 30px;
+        background-color: #3e64ff;
+        color: white;
+        border: 2px solid #3e64ff;
+        font-size: 20px;
+    }
+    .download-resume:hover{
+        background-color: white;
+        border: 2px solid black;
+        transition: 0.5s all ease-in-out;
+        color: black;
+    }
+    .about-data{
+        font-size: 12px!important;
+    }
+    .footer{
+        padding: 10px!important;
+    }
+    .send{
+        text-align: center;
+    }
+    .footnav{
+        display: block!important;
+        margin: 0 120px;
+        text-align: center;
+    }
+    .social{
+        margin: 0 30px;
+    }
+    .oybek{
+        font-size: 12px!important;
+    }
+    .myimage{
+        margin-left: -25px;
+        height: 450px!important;
+    }
+    .abt{
+        margin: 0!important;
+    }
+    #navi{
+        display: none;
+    }
+    .navbar-brand{
+        margin-left: -50px;
+    }
+
+}
